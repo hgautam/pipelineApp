@@ -1,0 +1,48 @@
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-bnztw[0m
+{"level":"info","ts":1593240955.8709354,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593240955.8713994,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-bfxfg[0m
+{"level":"info","ts":1593240956.5205338,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593240956.5220783,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-pr-2-pr-bui-crrnn-f5rss[0m
+{"level":"info","ts":1593240962.7874637,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593240963.4805896,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ master in path /workspace/source"}
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:e458a06da4d95fd83950f5f1f18fdead2f514302,2:e5a45eeeff0256ebed02ffdb22501c29c432a62e
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow e5a45eeeff0256ebed02ffdb22501c29c432a62e: e458a06da4d95fd83950f5f1f18fdead2f514302:
+DEBUG: ran git fetch --unshallow origin e5a45eeeff0256ebed02ffdb22501c29c432a62e: e458a06da4d95fd83950f5f1f18fdead2f514302: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard e458a06da4d95fd83950f5f1f18fdead2f514302
+DEBUG: ran git reset --hard e458a06da4d95fd83950f5f1f18fdead2f514302 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge e5a45eeeff0256ebed02ffdb22501c29c432a62e
+DEBUG: ran git merge e5a45eeeff0256ebed02ffdb22501c29c432a62e in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e e458a06da4d95fd83950f5f1f18fdead2f514302..HEAD
+Merged SHA e5a45eeeff0256ebed02ffdb22501c29c432a62e with commit message 'change yaml file' into base branch master
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-start-preview[0m
+dummy step preview
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-preview-validation[0m
+/workspace/source
+root
+total 32
+-rw-r--r-- 1 root root  1494 Jun 27 06:56 jenkins-x.yml
+-rw-r--r-- 1 root root 11357 Jun 27 06:56 LICENSE
+-rw-r--r-- 1 root root    42 Jun 27 06:56 OWNERS
+-rw-r--r-- 1 root root    71 Jun 27 06:56 OWNERS_ALIASES
+-rwxr-xr-x 1 root root   107 Jun 27 06:56 pipeline.sh
+-rw-r--r-- 1 root root    94 Jun 27 06:56 README.md
+
+Showing logs for build [32mhgautam-pipelineapp-pr-2-pr-bui-crrnn-1[0m stage [32mrelease[0m and container [32mstep-run-preview[0m
+Pipeline run feature started...
+pipeline run feature ended...
