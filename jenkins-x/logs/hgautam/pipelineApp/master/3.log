@@ -1,0 +1,26 @@
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-pqzfx[0m
+{"level":"info","ts":1593221454.1875868,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593221454.188386,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-8kdsr[0m
+{"level":"info","ts":1593221455.181319,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593221455.1826978,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rele-rxxs2-xbqmq[0m
+{"level":"info","ts":1593221460.2736218,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593221460.909941,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:98f5b28431b01cef57fb03b2b5591ea8d3ace81e
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-promote-release[0m
+dummy step release
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-rxxs2-3[0m stage [32mrelease[0m and container [32mstep-run-pipeline[0m
+/bin/sh: ./pipeline.sh: Permission denied
+[31m
+Pipeline failed on stage 'release' : container 'step-run-pipeline'. The execution of the pipeline has stopped.[0m
