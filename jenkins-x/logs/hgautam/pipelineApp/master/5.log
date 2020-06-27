@@ -1,0 +1,34 @@
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-credential-initializer-mmgx4[0m
+{"level":"info","ts":1593221761.71986,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593221761.720541,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-s45bn[0m
+{"level":"info","ts":1593221762.660488,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593221762.6638746,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rele-vgrxw-hfm72[0m
+{"level":"info","ts":1593221768.7444606,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593221769.4509213,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.4 in path /workspace/source"}
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:0ba7a7de8578d2da7252c451192e033d53320eab
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-promote-release[0m
+dummy step release
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-run-validation[0m
+/workspace/source
+total 24
+-rw-r--r-- 1 root root   869 Jun 27 01:36 jenkins-x.yml
+-rw-r--r-- 1 root root 11357 Jun 27 01:36 LICENSE
+-rw-r--r-- 1 root root    90 Jun 27 01:36 pipeline.sh
+-rw-r--r-- 1 root root   111 Jun 27 01:36 README.md
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-vgrxw-5[0m stage [32mrelease[0m and container [32mstep-run-pipeline[0m
+/bin/sh: ./pipeline.sh: Permission denied
+[31m
+Pipeline failed on stage 'release' : container 'step-run-pipeline'. The execution of the pipeline has stopped.[0m
