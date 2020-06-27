@@ -24,7 +24,7 @@ pipelineConfig:
           - command: echo dummy step release
             dir: /workspace/source
             name: promote-release
-          - command: pwd; ls -l
+          - command: pwd; whoami; ls -l
             dir: /workspace/source
             name: run-validation
           - command: ./pipeline.sh
