@@ -40,7 +40,7 @@ pipelineConfig:
         stages:
           - name: release
             steps:
-            - command: echo dummy step feauture
+            - command: echo dummy step start feauture
               dir: /workspace/source
               name: promote-feature
             - command: pwd; whoami; ls -l
