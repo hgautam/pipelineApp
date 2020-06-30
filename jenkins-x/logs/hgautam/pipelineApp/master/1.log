@@ -1,36 +1,36 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-rphm7[0m
-{"level":"info","ts":1593458078.868841,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1593458078.8698535,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-vdm4s[0m
+{"level":"info","ts":1593547562.54446,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593547562.5475757,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-mjpks[0m
-{"level":"info","ts":1593458081.0096529,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1593458081.012016,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-9rw9s[0m
+{"level":"info","ts":1593547564.3662632,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593547564.3701124,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-b68k5-h48gr[0m
-{"level":"info","ts":1593458096.1703923,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1593458096.757601,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.6 in path /workspace/source"}
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rhkvr-2fjh7[0m
+{"level":"info","ts":1593547576.0289865,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593547576.6923153,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.7 in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-promote-staging[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-promote-staging[0m
 dummy step release
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-staging-validation[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-staging-validation[0m
 /workspace/source
 root
 total 32
--rw-r--r-- 1 root root  1494 Jun 29 19:14 jenkins-x.yml
--rw-r--r-- 1 root root 11357 Jun 29 19:14 LICENSE
--rw-r--r-- 1 root root    42 Jun 29 19:14 OWNERS
--rw-r--r-- 1 root root    71 Jun 29 19:14 OWNERS_ALIASES
--rwxr-xr-x 1 root root   107 Jun 29 19:14 pipeline.sh
--rw-r--r-- 1 root root    94 Jun 29 19:14 README.md
+-rw-r--r-- 1 root root  1495 Jun 30 20:06 jenkins-x.yml
+-rw-r--r-- 1 root root 11357 Jun 30 20:06 LICENSE
+-rw-r--r-- 1 root root    42 Jun 30 20:06 OWNERS
+-rw-r--r-- 1 root root    71 Jun 30 20:06 OWNERS_ALIASES
+-rwxr-xr-x 1 root root   107 Jun 30 20:06 pipeline.sh
+-rw-r--r-- 1 root root    94 Jun 30 20:06 README.md
 
-Showing logs for build [32mhgautam-pipelineapp-master-b68k5-1[0m stage [32mrelease[0m and container [32mstep-run-staging[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rhkvr-1[0m stage [32mrelease[0m and container [32mstep-run-staging[0m
 Pipeline run feature started...
 pipeline run feature ended...
