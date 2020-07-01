@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-echo "Pipeline run feature started..."
+echo "Pipeline run master started..."
 
 sleep 5
 
-echo "pipeline run feature ended..."
+echo "pipeline run master ended..."
