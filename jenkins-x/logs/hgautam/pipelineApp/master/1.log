@@ -1,36 +1,26 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-kqhr2[0m
-{"level":"info","ts":1593673584.1282947,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1593673584.129213,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-tp9jn[0m
+{"level":"info","ts":1593989134.9423416,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593989134.94297,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-6n9d8[0m
-{"level":"info","ts":1593673584.941034,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1593673584.9424286,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-w9njh[0m
+{"level":"info","ts":1593989137.2335172,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593989137.2348638,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-v42x9-mqppd[0m
-{"level":"info","ts":1593673591.1375241,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1593673591.8692818,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.10 in path /workspace/source"}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hgautam-pipelineapp-master-zcdg7-c2khj[0m
+{"level":"info","ts":1593989160.5805554,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593989161.3003466,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ master in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-promote-staging[0m
-dummy step release
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
 
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-staging-validation[0m
-/workspace/source
-root
-total 32
--rw-r--r-- 1 root root  1495 Jul  2 07:06 jenkins-x.yml
--rw-r--r-- 1 root root 11357 Jul  2 07:06 LICENSE
--rw-r--r-- 1 root root    42 Jul  2 07:06 OWNERS
--rw-r--r-- 1 root root    71 Jul  2 07:06 OWNERS_ALIASES
--rwxr-xr-x 1 root root   107 Jul  2 07:06 pipeline.sh
--rw-r--r-- 1 root root    94 Jul  2 07:06 README.md
-
-Showing logs for build [32mhgautam-pipelineapp-master-v42x9-1[0m stage [32mrelease[0m and container [32mstep-run-staging[0m
-Pipeline run master 1 started...
-pipeline run master ended...
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-zcdg7-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+error: failed to create effective pipeline for release: validation failed for Pipeline: No agent specified for stage or for its parent(s): stages[0].agent
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
