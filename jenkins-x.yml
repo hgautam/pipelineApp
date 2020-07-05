@@ -2,7 +2,7 @@ buildPack: none
 pipelineConfig:
   agent:
     image: gcr.io/jenkinsxio/builder-go
-  environment:
+  env:
     - name: DEPLOY_VAR
       value: bar
   pipelines:
