@@ -11,7 +11,7 @@ pipelineConfig:
         stages:
         - name: release
           steps:
-          - command: echo dummy step preview
+          - command: echo $DEPLOY_VAR
             dir: /workspace/source
             name: start-preview
           - command: ./pipeline.sh
@@ -22,7 +22,7 @@ pipelineConfig:
         stages:
         - name: release
           steps:
-          - command: echo dummy step release
+          - command: echo DEPLOY_VAR
             dir: /workspace/source
             name: promote-staging
           - command: ./pipeline.sh
