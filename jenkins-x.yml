@@ -1,5 +1,7 @@
-buildPack: none
+buildPack: nop
 pipelineConfig:
+  extends:
+   file: jenkins-x-base.yml
   env:
     - name: DEPLOY_VAR
       value: bar
@@ -11,7 +13,7 @@ pipelineConfig:
         stages:
         - name: release
           steps:
-          - command: echo hi from pullRequst pipeline
+          - command: echo hi from extended pipeline
             dir: /workspace/source
             name: start-preview
           - command: ./pipeline.sh
@@ -24,7 +26,7 @@ pipelineConfig:
         stages:
         - name: release
           steps:
-          - command: echo hi from release pipeline
+          - command: echo hi from extended pipeline
             dir: /workspace/source
             name: promote-staging
           - command: ./pipeline.sh
