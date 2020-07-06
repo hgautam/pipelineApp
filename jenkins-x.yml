@@ -24,7 +24,7 @@ pipelineConfig:
         stages:
         - name: release
           steps:
-          - command: echo DEPLOY_VAR
+          - command: echo $DEPLOY_VAR
             dir: /workspace/source
             name: promote-staging
           - command: ./pipeline.sh
