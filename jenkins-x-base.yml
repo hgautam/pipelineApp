@@ -1,0 +1,22 @@
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go 
+        stages:
+        - name: release
+          steps:
+          - command: echo hi from base pipeline
+            dir: /workspace/source
+            name: start-pullrequest-workflow
+    release:
+      pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go
+        stages:
+        - name: release
+          steps:
+          - command: echo hi from base pipeline
+            dir: /workspace/source
+            name: start-release-workflow
