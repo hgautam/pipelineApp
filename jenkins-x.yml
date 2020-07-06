@@ -1,13 +1,13 @@
 buildPack: none
 pipelineConfig:
-  agent:
-    image: gcr.io/jenkinsxio/builder-go
   env:
     - name: DEPLOY_VAR
       value: bar
   pipelines:
     pullRequest:
       pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go 
         stages:
         - name: release
           steps:
@@ -19,6 +19,8 @@ pipelineConfig:
             name: run-preview
     release:
       pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go
         stages:
         - name: release
           steps:
