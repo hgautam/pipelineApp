@@ -1,25 +1,25 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-7l5r7[0m
-{"level":"info","ts":1594062443.9931161,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594062443.995617,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-9s99c[0m
+{"level":"info","ts":1594078524.9708056,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594078524.9714959,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-vvmcj[0m
-{"level":"info","ts":1594062445.4240968,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594062445.4288461,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-5ptdf[0m
+{"level":"info","ts":1594078526.1611376,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594078526.163179,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-76bnp-ktjxx[0m
-{"level":"info","ts":1594062449.5710118,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594062450.3057203,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.14 in path /workspace/source"}
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-c6fsh-ntxzm[0m
+{"level":"info","ts":1594078541.2442605,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594078541.8516183,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.17 in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-promote-staging[0m
-bar
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-promote-staging[0m
+hi from release pipeline
 
-Showing logs for build [32mhgautam-pipelineapp-master-76bnp-1[0m stage [32mrelease[0m and container [32mstep-run-staging[0m
+Showing logs for build [32mhgautam-pipelineapp-master-c6fsh-1[0m stage [32mrelease[0m and container [32mstep-run-staging[0m
 Pipeline run master 1 started...
 pipeline run master ended...
