@@ -1,4 +1,3 @@
-buildPack: nop
 pipelineConfig:
   pipelines:
     pullRequest:
