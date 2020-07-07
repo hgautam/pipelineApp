@@ -1,3 +1,14 @@
 buildPack: nop
-
+pipelineConfig:
+  env:
+    - name: DEPLOY_VAR
+      value: bar
+# Run a set of steps before all stages of the release pipeline.
+  pipelines:
+    release:
+      setup:
+        steps:
+        - name: setup step
+          sh: echo hi from setup
+        - name: release-setup
 
