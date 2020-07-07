@@ -16,9 +16,6 @@ pipelineConfig:
           - command: echo hi from extended pipeline
             dir: /workspace/source
             name: start-preview
-          - command: ./pipeline.sh
-            dir: /workspace/source
-            name: run-preview
     release:
       pipeline:
         agent:
@@ -28,7 +25,5 @@ pipelineConfig:
           steps:
           - command: echo hi from extended pipeline
             dir: /workspace/source
-            name: promote-staging
-          - command: ./pipeline.sh
-            dir: /workspace/source
-            name: run-staging
+            name: start-staging
+

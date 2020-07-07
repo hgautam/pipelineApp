@@ -10,7 +10,7 @@ pipelineConfig:
           steps:
           - command: echo hi from base pipeline
             dir: /workspace/source
-            name: start-pullrequest-workflow
+            name: start-preview
     release:
       pipeline:
         agent:
@@ -20,4 +20,4 @@ pipelineConfig:
           steps:
           - command: echo hi from base pipeline
             dir: /workspace/source
-            name: start-release-workflow
+            name: start-staging
