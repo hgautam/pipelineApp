@@ -1,29 +1,3 @@
 buildPack: nop
-pipelineConfig:
-  extends:
-   file: jenkins-x-base.yml
-  env:
-    - name: DEPLOY_VAR
-      value: bar
-  pipelines:
-    pullRequest:
-      pipeline:
-        agent:
-          image: gcr.io/jenkinsxio/builder-go 
-        stages:
-        - name: release
-          steps:
-          - command: echo hi from extended pipeline
-            dir: /workspace/source
-            name: start-preview
-    release:
-      pipeline:
-        agent:
-          image: gcr.io/jenkinsxio/builder-go
-        stages:
-        - name: release
-          steps:
-          - command: echo hi from extended pipeline
-            dir: /workspace/source
-            name: start-staging
+
 
