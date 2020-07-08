@@ -1,21 +1,173 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-credential-initializer-kdjzr[0m
-{"level":"info","ts":1594080780.4607022,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594080780.4613152,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-dhb5g[0m
+{"level":"info","ts":1594236301.185378,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594236301.1861224,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-2486c[0m
-{"level":"info","ts":1594080781.4445863,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594080781.4459956,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-bj7x9[0m
+{"level":"info","ts":1594236302.16388,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594236302.1657608,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rele-dj9jt-zgt2x[0m
-{"level":"info","ts":1594080785.5501423,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594080786.191901,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.20 in path /workspace/source"}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hgautam-pipelineapp-master-mqvck-77pww[0m
+{"level":"info","ts":1594236308.2912261,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594236309.0371816,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ master in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:454b989b36f457b2ff7d625b482ab2ae76535509
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-dj9jt-4[0m stage [32mrelease[0m and container [32mstep-start-staging[0m
-hi from extended pipeline
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Effective pipeline written to jenkins-x-effective.yml
+
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-mqvck-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: echo \$(**-release-version) > VERSION
+
+running command: ** step tag --version \$(cat VERSION)
+Tag v0.0.28 created and pushed to remote origin
+
+WARNING: could not find a stable version for Docker image:  in /builder/home/.**/jenkins-x-versions
+WARNING: for background see: https://jenkins-x.io/docs/concepts/version-stream/
+please lock this version down via the command: ** step create pr versions -k docker -n  -v 1.2.3
+error: failed to generate Tekton CRDs: validation failed for generated Task: *******-pipelineapp-master-g6wdb-release-4 apiVersion: tekton.dev/v1alpha1
+kind: Task
+metadata:
+  creationTimestamp: null
+  labels:
+    branch: master
+    build: "4"
+    jenkins.io/pipelineType: build
+    jenkins.io/task-stage-name: release
+    owner: *******
+    repository: pipelineApp
+  name: *******-pipelineapp-master-g6wdb-release-4
+  namespace: **
+spec:
+  inputs:
+    params:
+    - default: 0.0.28
+      description: the version number for this pipeline which is used as a tag on
+        docker images and helm charts
+      name: version
+      type: string
+    - default: "4"
+      description: the PipelineRun build number
+      name: build_id
+      type: string
+    resources:
+    - name: workspace
+      targetPath: source
+      type: git
+  steps:
+  - args:
+    - step
+    - git
+    - merge
+    - --verbose
+    command:
+    - **
+    env:
+    - name: APP_NAME
+      value: pipelineApp
+    - name: BRANCH_NAME
+      value: master
+    - name: BUILD_NUMBER
+      value: "4"
+    - name: JOB_NAME
+      value: *******/pipelineApp/master
+    - name: PIPELINE_KIND
+      value: release
+    - name: PULL_REFS
+      value: 'master:'
+    - name: REPO_NAME
+      value: pipelineApp
+    - name: REPO_OWNER
+      value: *******
+    - name: SOURCE_URL
+      value: https://github.com/*******/pipelineApp.git
+    - name: DOCKER_REGISTRY
+    - name: GIT_AUTHOR_NAME
+      value: *******
+    - name: GIT_AUTHOR_EMAIL
+      value: himanshu@aplimasolutions.com
+    - name: GIT_COMMITTER_NAME
+      value: *******
+    - name: GIT_COMMITTER_EMAIL
+      value: himanshu@aplimasolutions.com
+    - name: JX_BATCH_MODE
+      value: "true"
+    - name: VERSION
+      value: $(inputs.params.version)
+    - name: BUILD_ID
+      value: $(inputs.params.build_id)
+    - name: PREVIEW_VERSION
+      value: $(inputs.params.version)
+    image: gcr.io/jenkinsxio/builder-**:2.1.56-688
+    name: git-merge
+    resources: {}
+    volumeMounts:
+    - mountPath: /etc/podinfo
+      name: podinfo
+      readOnly: true
+    workingDir: /workspace/source
+  - args:
+    - echo hi from base pipeline
+    command:
+    - /bin/sh
+    - -c
+    env:
+    - name: APP_NAME
+      value: pipelineApp
+    - name: BRANCH_NAME
+      value: master
+    - name: BUILD_NUMBER
+      value: "4"
+    - name: JOB_NAME
+      value: *******/pipelineApp/master
+    - name: PIPELINE_KIND
+      value: release
+    - name: PULL_REFS
+      value: 'master:'
+    - name: REPO_NAME
+      value: pipelineApp
+    - name: REPO_OWNER
+      value: *******
+    - name: SOURCE_URL
+      value: https://github.com/*******/pipelineApp.git
+    - name: DOCKER_REGISTRY
+    - name: GIT_AUTHOR_NAME
+      value: *******
+    - name: GIT_AUTHOR_EMAIL
+      value: himanshu@aplimasolutions.com
+    - name: GIT_COMMITTER_NAME
+      value: *******
+    - name: GIT_COMMITTER_EMAIL
+      value: himanshu@aplimasolutions.com
+    - name: JX_BATCH_MODE
+      value: "true"
+    - name: VERSION
+      value: $(inputs.params.version)
+    - name: BUILD_ID
+      value: $(inputs.params.build_id)
+    - name: PREVIEW_VERSION
+      value: $(inputs.params.version)
+    name: start-staging
+    resources: {}
+    volumeMounts:
+    - mountPath: /etc/podinfo
+      name: podinfo
+      readOnly: true
+    workingDir: /workspace/source
+  volumes:
+  - downwardAPI:
+      items:
+      - fieldRef:
+          fieldPath: metadata.labels
+        path: labels
+    name: podinfo
+: missing field(s): steps.Image
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
