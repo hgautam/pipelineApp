@@ -1,4 +1,4 @@
-buildPack: nop
+buildPack: none
 pipelineConfig:
   pipelines:
     pullRequest:
