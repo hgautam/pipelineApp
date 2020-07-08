@@ -1,0 +1,24 @@
+agent:
+  label: builder-go
+  container: gcr.io/jenkinsxio/builder-go:0.1.339
+pipelines:
+  pullRequest:
+    pipeline:
+      agent:
+        image: gcr.io/jenkinsxio/builder-go
+      stages:
+      -name: release
+       steps:
+       - command: echo hi from base pipeline
+         dir: /workspace/source
+         name: start-preview
+  release:
+    pipeline:
+      agent:
+        label: gcr.io/jenkinsxio/builder-go
+      stages:
+      - name: release
+        steps:
+        - command: echo hi from base pipeline
+          dir: /workspace/source
+          name: start-staging
