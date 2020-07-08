@@ -1,37 +1,37 @@
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-r8xfz[0m
-{"level":"info","ts":1594233785.8203661,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594233785.8211455,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-gh6tr[0m
+{"level":"info","ts":1594235746.622891,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594235746.6234355,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-szhr5[0m
-{"level":"info","ts":1594233786.8854184,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594233786.8877337,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-qmdjn[0m
+{"level":"info","ts":1594235748.687214,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594235748.688992,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hgautam-pipelineapp-master-c8nqz-58b8h[0m
-{"level":"info","ts":1594233792.122821,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594233792.8170552,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ master in path /workspace/source"}
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hgautam-pipelineapp-master-2677k-qr6t2[0m
+{"level":"info","ts":1594235770.7158263,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594235771.441568,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ master in path /workspace/source"}
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
 SKIP merge-pull-refs: Nothing to merge
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
 Effective pipeline written to jenkins-x-effective.yml
 
-Showing logs for build [32mmeta-hgautam-pipelineapp-master-c8nqz-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+Showing logs for build [32mmeta-hgautam-pipelineapp-master-2677k-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
 running command: ** step next-version --use-git-tag-only --tag
-created new version: 0.0.23 and written to file: ./VERSION
-Tag v0.0.23 created and pushed to remote origin
+created new version: 0.0.25 and written to file: ./VERSION
+Tag v0.0.25 created and pushed to remote origin
 
 WARNING: could not find a stable version for Docker image:  in /builder/home/.**/jenkins-x-versions
 WARNING: for background see: https://jenkins-x.io/docs/concepts/version-stream/
 please lock this version down via the command: ** step create pr versions -k docker -n  -v 1.2.3
-error: failed to generate Tekton CRDs: validation failed for generated Task: *******-pipelineapp-master-sfwm6-release-1 apiVersion: tekton.dev/v1alpha1
+error: failed to generate Tekton CRDs: validation failed for generated Task: *******-pipelineapp-master-ncjzm-release-1 apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
   creationTimestamp: null
@@ -42,12 +42,12 @@ metadata:
     jenkins.io/task-stage-name: release
     owner: *******
     repository: pipelineApp
-  name: *******-pipelineapp-master-sfwm6-release-1
+  name: *******-pipelineapp-master-ncjzm-release-1
   namespace: **
 spec:
   inputs:
     params:
-    - default: 0.0.23
+    - default: 0.0.25
       description: the version number for this pipeline which is used as a tag on
         docker images and helm charts
       name: version
