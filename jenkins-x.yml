@@ -9,5 +9,5 @@ pipelineConfig:
         stage: build
         name: dummy-release
         step:
-          sh: echo replaces step
+          sh: echo hi from replaced step
         type: replace 
