@@ -1,1 +1,25 @@
 buildPack: nop
+pipelineConfig:
+  agent:
+    label: gcr.io/jenkinsxio/builder-go
+  env:
+    - name: JENKINS-X
+      value: jx
+    - name: MY_VAR
+      value: foo
+  pipelines:
+    release:
+      setup:
+        steps:
+          - name: download-dependencies
+            sh: echo downloading dependencies for ${JENKINS-X}
+          - name: set-permissions
+            sh: echo running chmod command
+    overrides:
+      - name: dummy-release
+        pipeline: release
+        stage: build
+        step:
+          name: pre-dummy-release
+          sh: echo pre dummy release
+        type: before
