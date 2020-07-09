@@ -1,13 +1,1 @@
 buildPack: nop
-pipelineConfig:
-  agent:
-    label: gcr.io/jenkinsxio/builder-go
-  pipelines:
-    overrides:
-      # Run a step before the npm-install step in the build stage in the pullRequest pipeline.
-      - pipeline: release
-        stage: build
-        name: dummy-release
-        step:
-          sh: echo hi from replaced step
-        type: replace 
