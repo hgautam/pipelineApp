@@ -1,1 +1,13 @@
 buildPack: nop
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        agent:
+          label: gcr.io/jenkinsxio/builder-go
+        stages:
+        - name: release
+          steps:
+          - command: echo hi from base pipeline
+            dir: /workspace/source
+            name: start-staging
