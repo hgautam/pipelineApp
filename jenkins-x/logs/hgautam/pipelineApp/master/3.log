@@ -1,26 +1,38 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-kv6kr[0m
-{"level":"info","ts":1594249389.5918686,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594249389.5926497,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8rwfc[0m
+{"level":"info","ts":1594340343.2380605,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594340343.2389448,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-hhssh[0m
-{"level":"info","ts":1594249390.6291401,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594249390.6308408,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-7gskt[0m
+{"level":"info","ts":1594340343.7540872,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594340343.7557366,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rele-5gtpd-xv987[0m
-{"level":"info","ts":1594249500.950146,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594249502.9259648,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.32 in path /workspace/source"}
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-pipelineapp-master-rele-x4lvq-p8c2r[0m
+{"level":"info","ts":1594340350.8563004,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594340351.327606,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.46 in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:db62977ba474883a2c8ea685f80b433d15ad5527
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a86af5243b8aaae8a3ccd4a8ca6009c132ec8e4d
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mhgautam-pipelineapp-master-rele-5gtpd-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-download-dependencies[0m
+downloading dependencies for **
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-set-permissions[0m
+running chmod command
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-pre-dummy-release[0m
+pre dummy release
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
 Release
+
+Showing logs for build [32mhgautam-pipelineapp-master-rele-x4lvq-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-dummy-release[0m
+post dummy release
