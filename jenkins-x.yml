@@ -27,6 +27,6 @@ pipelineConfig:
         pipeline: release
         stage: build
         step:
-          name: post-dummy-release
-          sh: echo post dummy release
-        type: after
+          name: replaced-release
+          sh: echo executing replaced-release step
+        type: replace
