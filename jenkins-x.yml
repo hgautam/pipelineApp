@@ -23,3 +23,10 @@ pipelineConfig:
           name: pre-dummy-release
           sh: echo pre dummy release
         type: before
+      - name: dummy-release
+        pipeline: release
+        stage: build
+        step:
+          name: post-dummy-release
+          sh: echo post dummy release
+        type: after
