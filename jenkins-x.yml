@@ -1,12 +1,1 @@
-buildPack: none
-pipelineConfig:
-  agent:
-    label: builder-go
-    container: gcr.io/jenkinsxio/builder-go:0.1.339
-  pipelines:
-    release:
-      build:
-        steps:
-          - sh: echo Release
-            name: dummy-release
-            container: gcr.io/jenkinsxio/builder-go:0.1.339
+buildPack: nop
