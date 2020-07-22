@@ -1,26 +1,26 @@
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-49b5v[0m
-{"level":"info","ts":1594665481.0614977,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594665481.062444,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-wzv67[0m
+{"level":"info","ts":1595439543.8520613,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1595439543.8537674,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-kd954[0m
-{"level":"info","ts":1594665482.0702288,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594665482.0715635,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-jzvjp[0m
+{"level":"info","ts":1595439545.3535345,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1595439545.3615344,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-pipelineapp-master-gj22t-m5b4h[0m
-{"level":"info","ts":1594665603.6641839,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594665605.0228367,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-pipelineapp-master-n7kjj-4tv7p[0m
+{"level":"info","ts":1595439655.5499804,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1595439657.1212196,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/pipelineApp.git @ v0.0.3 in path /workspace/source"}
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mhgautam-pipelineapp-master-gj22t-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
+Showing logs for build [32mhgautam-pipelineapp-master-n7kjj-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
 Release
